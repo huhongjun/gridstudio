@@ -47,10 +47,19 @@ For more information check out our <a href="https://github.com/ricklamers/gridst
 
 docker
     ubuntu 18.04
-terminal server
-    xterm.js
+Xterm.js
+
+    terminal server
+        Xterm.js is a front-end component written in TypeScript that lets applications bring fully-featured terminals to their users in the browser. It's used by popular projects such as VS Code, Hyper and Theia.Xterm.js is not bash. Xterm.js can be connected to processes like bash and let you interact with them (provide input, receive output).
+    xterm client
+
 web server
-    go
+    go语言
+    功能
+        workspace管理
+        文件服务器(上传\加载\主机文件访问)
+        Python集成
+        电子表格处理
 
 python
 
