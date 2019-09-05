@@ -10,19 +10,19 @@
 	</head>
 	<body>
 		<div class="context-menu">
-			<div class="context-menu-item copy">Copy</div>
-			<div class="context-menu-item cut">Cut</div>
-			<div class="context-menu-item paste">Paste</div>
-			<div class="context-menu-item paste-as-value">Paste as value</div>
-			<div class="context-menu-item hide column-only insert-column-left">Insert column left</div>
-			<div class="context-menu-item hide column-only insert-column-right">Insert column right</div>
-			<div class="context-menu-item hide column-only delete-column">Delete column</div>
-			<div class="context-menu-item hide row-only insert-row-above">Insert row above</div>
-			<div class="context-menu-item hide row-only insert-row-below">Insert row below</div>
-			<div class="context-menu-item hide row-only delete-row">Delete row</div>
-			<div class="context-menu-item sort-asc">Sort ascending</div>
-			<div class="context-menu-item sort-desc">Sort descending</div>
-			<div class="context-menu-item sheet-size">Change sheet size</div>
+			<div class="context-menu-item copy">拷贝</div>
+			<div class="context-menu-item cut">剪切</div>
+			<div class="context-menu-item paste">粘贴</div>
+			<div class="context-menu-item paste-as-value">粘贴为数据值</div>
+			<div class="context-menu-item hide column-only insert-column-left">插入列（左侧）</div>
+			<div class="context-menu-item hide column-only insert-column-right">插入列（右侧）</div>
+			<div class="context-menu-item hide column-only delete-column">删除列</div>
+			<div class="context-menu-item hide row-only insert-row-above">插入行（上方）</div>
+			<div class="context-menu-item hide row-only insert-row-below">插入行（下方）</div>
+			<div class="context-menu-item hide row-only delete-row">删除行</div>
+			<div class="context-menu-item sort-asc">排序(正向)</div>
+			<div class="context-menu-item sort-desc">排序(反向)</div>
+			<div class="context-menu-item sheet-size">改变表格尺寸</div>
 			<div class="context-menu-item dropdown">
 				Pandas
 				<div class="context-menu-submenu">
@@ -42,7 +42,7 @@
 			<div class="workspaceName"><input type="hidden" name='id' value='' /><input type="text" name="workspaceName" value="" /></div>
 			<div-menu>
 				<menu-item> 
-					File
+					文件
 					<menu-list>
 						<menu-item class='load-csv'>Load CSV<input type='file' class="csv-input" /></menu-item>
 						<menu-item class='export-csv'>Export as CSV</menu-item>
@@ -52,7 +52,7 @@
 					</menu-list>
 				</menu-item>
 				<menu-item>
-					Plot
+					绘图
 					<menu-list>
 						<menu-item class='plot-scatter'>Scatter</menu-item>
 						<menu-item class='plot-line'>Line</menu-item>
@@ -60,16 +60,16 @@
 					</menu-list>
 				</menu-item>
 				<menu-item> 
-					Plots
+					链接
 					<menu-list class="plot-list">
 							<menu-item class='no-plots'>No plots</menu-item>
 					</menu-list>
 				</menu-item>
 				<menu-item class='code'>  
-					Code
+					代码
 				</menu-item>
 				<menu-item>
-					Help
+					帮助
 					<menu-list>
 						<a target="blank" href="https://github.com/ricklamers/gridstudio/wiki"><menu-item class='docs'>Documentation</menu-item></a>
 						<a target="blank" href="https://join.slack.com/t/grid-community/shared_invite/enQtNDA2OTkyMTg0OTI5LTE5OThjZDE3NWZjYTllMDIxMDQzYTRlNDhlOGRiMTY0MjQ5ZmEzOTQ2YTEwNDI3MzFiMmFiYzVmMTk1ZmIyMGM"><menu-item class='slack'>Slack community</menu-item></a>
@@ -107,10 +107,10 @@
 				
 				<div class="dev-tabs">
 					<div class="tabs">
-						<div class="tab" data-tab='filemanager'>Files</div>
-						<div class="tab" data-tab='plots'>Plots</div>
-						<div class="tab current" data-tab='terminal'>Terminal</div>
-						<div data-tab='console' class="tab">Python out</div>
+						<div class="tab" data-tab='filemanager'>文件浏览</div>
+						<div class="tab" data-tab='plots'>图表</div>
+						<div class="tab current" data-tab='terminal'>终端</div>
+						<div data-tab='console' class="tab">Python输出</div>
 					</div>
 					<div class="view terminal" id="terminal-container"></div>
 					<div class="view console" style="display:none;"></div>

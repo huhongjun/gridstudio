@@ -20,8 +20,8 @@ $(document).ready(function(){
 
                 workspaceList.append(
                     "<li>" 
-                    +"<div class='workspace-controls'><form action='/initialize' method='post'><input type='hidden' value='"+data[x].slug+"' name='uuid' /><input type='hidden' value='"+data[x].id+"' name='id' /><button class='highlight one-click'>Open</button></form><form action='/copy/"+data[x].slug+"' method='post'><button class='one-click'>Copy</button></form><form action='/remove/"+data[x].slug+"' method='post'><button class='one-click'>Remove</button></form><button class='sharing' data-shared='"+data[x].shared+"'>Shared: " + sharedText + "</button></div>" +
-                    "<input type='name' name='workspaceName' value='"+workspaceNameEscaped+"' /><span class='last-edited'>Created: "+data[x].created+"</span><br><span class='slug'>Share link: "+root + "/copy/" + data[x].slug+"</span> </li>");
+                    +"<div class='workspace-controls'>                    <form action='/initialize' method='post'>                        <input type='hidden' value='"+data[x].slug+"' name='uuid' />                        <input type='hidden' value='"+data[x].id+"' name='id' />                        <button class='highlight one-click'>打开</button>                    </form>                    <form action='/copy/"+data[x].slug+"' method='post'><button class='one-click'>拷贝</button></form>                    <form action='/remove/"+data[x].slug+"' method='post'><button class='one-click'>删除</button></form>                    <button class='sharing' data-shared='"+data[x].shared+"'>分享: " + sharedText + "</button></div>"
+                    +"<input type='name' name='workspaceName' value='"+workspaceNameEscaped+"' /><span class='last-edited'>Created: "+data[x].created+"</span><br><span class='slug'>共享链接: "+root + "/copy/" + data[x].slug+"</span> </li>");
             }
 
         })
