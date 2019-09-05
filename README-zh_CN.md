@@ -28,20 +28,18 @@ For more information check out our <a href="https://github.com/ricklamers/gridst
 
 <b>If don't want to install Grid studio locally you can try out the beta of the hosted version here: <a href="https://dashboard.gridstudio.io">https://dashboard.gridstudio.io</a>.</b>
 
-### 构建  
+### 构建与安装、运行  
 
-    Installing Grid studio locally is very simple:
+    本地安装Grid studio很简单:
 
+    1. 克隆github仓库：
+        git clone https://github.com/ricklamers/gridstudio
+    2. 执行bash脚本(Windows上使用Git Bash):
+        cd gridstudio && ./run.sh
+    3. 浏览器中打开http://127.0.0.1:8080 ，用户名称: admin，密码： admin   
 
-    1. Clone the repository with this command:
-
-    git clone https://github.com/ricklamers/gridstudio
-
-    2. Run the bash script (on Windows use e.g. Git Bash) with this command:
-
-    cd gridstudio && ./run.sh
-
-    3. Go to http://127.0.0.1:8080 in your browser. Note! Username: admin password: admin   
+    容器构建
+        cd grid-app && ./build.sh
 
 ### 开发技术栈
 
@@ -60,6 +58,9 @@ web server
         文件服务器(上传\加载\主机文件访问)
         Python集成
         电子表格处理
-
+proxy
+    go
 python
+    脚本运行
+    预定义函数 =》1个init.py
 
