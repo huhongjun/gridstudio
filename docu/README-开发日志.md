@@ -7,6 +7,12 @@
 
 # 工作日志
 
+## 2019.09.05 星期四
+  
+  portainer帮助调试，可以看到日志，可以进入终端
+  vscode docker插件可以菜单操作进入容器终端  
+  界面 =》补充其他界面，标注主界面
+
 ## 2019.08.22
 
     构建docker => 构建成功
@@ -19,4 +25,7 @@
     github下载源码=》ubuntu 16.04 + vscode 1.17.1环境=》新建中文readme
     ./run.sh => 浏览器打开 =》运行examples中的python源码 =》可以逐行执行；可以执行选择代码
 
-#
+# bugs
+
+    # sudo ./build.sh  
+    pip -i https://mirrors.aliyun.com/pypi/simple/

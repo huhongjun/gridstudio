@@ -39,7 +39,7 @@ For more information check out our <a href="https://github.com/ricklamers/gridst
     3. 浏览器中打开http://127.0.0.1:8080 ，用户名称: admin，密码： admin   
 
     容器构建
-        cd grid-app && ./build.sh
+        cd grid-app && sudo ./build.sh  
 
 ### 开发技术栈
 
@@ -74,6 +74,15 @@ python
     /detector  
         detector.go
     /proxy  
+        /db                     sqllite3数据库
+        /logs
+            /sessionlogs        日志
+        /sessionmanager
+        /static
+        /userdata
+        /websocketproxy
+        manager.do
+        run-manager-proxy.sh    
     /python
     /static
     /terminal-server
