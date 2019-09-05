@@ -1,8 +1,8 @@
 <img src='http://gridstudio.io/image/logo-grid.svg' width='200px' style='margin-bottom: 30px;'>
 
-Grid studio是一个网页版电子表格应用,并且集成Python语言。
+Grid studio是一个Web版电子表格应用软件，完全集成Python编程语言。
 
-这个工具致力于提供加载、清洗、处理与可视化数据的一体化工作流。通过采用Go语言编写的电子表格后端，以及用于处理数据的集成Python运行时环境。
+该软件致力于提供加载、清洗、操作和可视化数据的一体化工作流。通过采用Go语言编写的电子表格后端，以及用于处理数据的集成Python运行时环境。
 
 ### 软件架构
 
