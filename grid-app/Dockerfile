@@ -40,7 +40,7 @@ COPY . /home/source/
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
 apt install -y nodejs
 
-RUN python3.7 -m pip install --upgrade pip numpy pandas matplotlib scipy scikit-learn
+RUN python3.7 -m pip install -i https://mirrors.aliyun.com/pypi/simple/ --upgrade pip numpy pandas matplotlib scipy scikit-learn
 
 # python3.7 -m pip install tensorflow
 
