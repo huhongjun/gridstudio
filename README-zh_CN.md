@@ -48,19 +48,45 @@ docker
 Xterm.js
 
     terminal server
-        Xterm.js is a front-end component written in TypeScript that lets applications bring fully-featured terminals to their users in the browser. It's used by popular projects such as VS Code, Hyper and Theia.Xterm.js is not bash. Xterm.js can be connected to processes like bash and let you interact with them (provide input, receive output).
-    xterm client
+        Xterm.js is a front-end component written in TypeScript that lets applications bring fully-featured terminals to their users in the browser. It's used by popular projects such as VS Code, Hyper and Theia.Xterm.js is not bash. Xterm.js can be connected to processes like bash and let you interact with them (provide input, receive output).  
+    xterm client  
 
-web server
-    go语言
-    功能
-        workspace管理
-        文件服务器(上传\加载\主机文件访问)
-        Python集成
-        电子表格处理
-proxy
-    go
-python
-    脚本运行
-    预定义函数 =》1个init.py
+web server  
+    go语言  
+    功能  
+        workspace管理  
+        文件服务器(上传\加载\主机文件访问)  
+        Python集成  
+        电子表格处理  
+proxy  
+    go  
+python  
+    脚本运行  
+    预定义函数 =》1个init.py  
 
+### 文件说明  
+
+/docu  huhongjun新增文档目录  
+/examples  Python脚本样例  
+    estimate_normal.py  
+    scrape.py  
+/grid-app  
+    /detector  
+        detector.go
+    /proxy  
+    /python
+    /static
+    /terminal-server
+    /working-files
+    build.sh
+    client.go
+    dockerfile
+    grid.go
+    hub.go
+    main.go
+    parse.go
+    python.go
+    tests.go
+destroy.sh  docker删除容器
+run.sh      docker启动容器
+shutdown.sh docker关闭容器
