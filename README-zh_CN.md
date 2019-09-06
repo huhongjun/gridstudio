@@ -4,19 +4,19 @@ Grid studio是一个Web版电子表格应用软件，完全集成Python编程语
 
 该软件致力于提供加载、清洗、操作和可视化数据的一体化工作流。通过采用Go语言编写的电子表格后端，以及用于处理数据的集成Python运行时环境。
 
+<a href="https://app.slack.com/client/TBZFHQPGS/CC0GKCMAB?cdn_fallback=1"> Slack Grid-community</a>
+
 ### 软件架构
 
 应用分两部分
 
-1. The (centralized) workspace manager
-    1. CRUD interface for creating, copying, editing and deleting workspaces.
-    1. Proxy to send traffic to the right workspace environment (part 2)
-1. Workspace Go execution environment
-    1. Go cell parsing and evaluating spreadsheet backend
-    1. Node.js terminal session
-    1. Python interpreter integration
-
-For more details about each part check out the code in the repository. If anything is unclear (or unreadable - not all code is equally pretty!) make an issue and details will be provided.
+1. (集中的)工作空间管理器
+    1. 工作空间的增删改和拷贝.
+    1. 发送消息到对应的工作空间环境(part 2)
+1. 工作空间的go执行环境
+    1. Go实现的单元格解析与计算电子表格后端
+    1. Node.js终端会话
+    1. Python解释器集成
 
 ### 安装
 
@@ -86,16 +86,18 @@ python
     /python
     /static
     /terminal-server
+        /xterm.js   xterm客户端
+        app.js      xterm服务器，nodejs expressWs
     /working-files
     build.sh
     client.go
     dockerfile
-    grid.go
-    hub.go
-    main.go
-    parse.go
-    python.go
-    tests.go
+    grid.go         电子表格
+    hub.go          ws hub
+    main.go         go服务器入口
+    parse.go        电子表格函数执行
+    python.go       Python解释器接受执行脚本并处理python执行输出
+    tests.go        自动化单元测试
 destroy.sh  docker删除容器
 run.sh      docker启动容器
 shutdown.sh docker关闭容器
