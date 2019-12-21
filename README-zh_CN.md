@@ -13,7 +13,7 @@ Grid studio是一个Web版电子表格应用软件，完全集成Python编程语
 1. (集中的)工作空间管理器
     1. 工作空间的增删改和拷贝.
     1. 发送消息到对应的工作空间环境(part 2)
-1. 工作空间的go执行环境
+2. 工作空间的go执行环境
     1. Go实现的单元格解析与计算电子表格后端
     1. Node.js终端会话
     1. Python解释器集成
@@ -40,6 +40,7 @@ For more information check out our <a href="https://github.com/ricklamers/gridst
 
     容器构建
         cd grid-app && sudo ./build.sh  
+        docker push 192.168.1.114:5000/busybox:v1
 
 ### 开发技术栈
 
